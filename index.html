@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Jodhpur - The Blue City</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Icons Link - FIXED -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- 1. NAVIGATION BAR -->
+    <header>
+        <div class="logo">Explore Jodhpur</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#places">Attractions</a></li>
+                <li><a href="#booking">Book Tour</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact" id="contact-nav">Contact Us</a></li>
+                <li><button id="dark-mode-toggle">🌙 Mode</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 2. HERO IMAGE SLIDER -->
+    <section class="hero-slider">
+        <div class="slider-container">
+            <div class="slide active" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('The Blue City of Jodhpur_ A Living Canvas of Bharat 🇮🇳.jpg');">
+                <div class="slide-text">
+                    <h1>Welcome to the Blue City</h1>
+                    <p>Experience the royal heritage, magnificent forts, and vibrant culture of Jodhpur.</p>
+                    <a href="#places" class="btn">Explore Now</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('Mehrangarh Fort, Mehrangarh Fort Jodhpur, Mehrangarh Fort Jodhpur Rajasthan.jpg');">
+                <div class="slide-text">
+                    <h1>Mehrangarh Fort Awaits</h1>
+                    <p>Step into India's history with spectacular architecture standing 410 feet high.</p>
+                    <a href="#timings" class="btn">Check Timings</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('Best Food In Jaipur.jpg');">
+                <div class="slide-text">
+                    <h1>Taste the Tradition</h1>
+                    <p>Indulge in world-famous Makhaniya Lassi, Mirchi Bada, and royal Rajasthani food.</p>
+                    <a href="#food" class="btn">View Famous Foods</a>
+                </div>
+            </div>
+        </div>
+        <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+        <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+    </section>
+
+    <!-- 3. PREMIUM SERVICES SECTION -->
+    <section class="services-section" id="services">
+        <h2 class="section-title">Our Premium Services</h2>
+        <p class="section-subtitle">We make your Jodhpur trip comfortable, memorable, and hassle-free.</p>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon-box"><i class="fas fa-map-marked-alt"></i></div>
+                <h3>Expert Tour Guides</h3>
+                <p>Hire certified local guides who speak multiple languages and know every secret story of the Blue City.</p>
+                <button class="service-btn" data-service="Expert Tour Guides">Book a Guide</button>
+            </div>
+            <div class="service-card">
+                <div class="service-icon-box"><i class="fas fa-hotel"></i></div>
+                <h3>Heritage Hotel Booking</h3>
+                <p>Get exclusive discounts on traditional Rajasthani Havelis and luxury heritage resort stays.</p>
+                <button class="service-btn" data-service="Heritage Hotel Booking">Reserve Stay</button>
+            </div>
+            <div class="service-card">
+                <div class="service-icon-box"><i class="fas fa-car"></i></div>
+                <h3>Local Taxi & Cab Rental</h3>
+                <p>Explore Jodhpur comfortably with our fleet of clean, AC cars and professional drivers.</p>
+                <button class="service-btn" data-service="Local Taxi & Cab Rental">Rent a Car</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. TOURIST PLACES SECTION -->
+    <section class="jodhpur-places" id="places">
+        <h2 class="section-title">Explore Jodhpur</h2>
+        <div class="places-grid">
+            <div class="place-card">
+                <img src="pexels-abhinav-tripathi-473877923-15774210.jpg" alt="Mehrangarh Fort">
+                <div class="card-content">
+                    <h3>Mehrangarh Fort</h3>
+                    <p>One of the largest forts in India, built around 1459 by Rao Jodha. It stands majestic above the city.</p>
+                    <button class="read-more-btn">Read More</button>
+                </div>
+            </div>
+            <div class="place-card">
+                <img src="Jaswant Thada, India.jpg" alt="Jaswant Thada">
+                <div class="card-content">
+                    <h3>Jaswant Thada</h3>
+                    <p>An architectural landmark made of pure white marble, serving as a peaceful royal memorial.</p>
+                    <button class="read-more-btn">Read More</button>
+                </div>
+            </div>
+            <div class="place-card">
+                <img src="Umaid Bhawan Palace lit up at dusk.jpg" alt="Umaid Bhawan Palace">
+                <div class="card-content">
+                    <h3>Umaid Bhawan Palace</h3>
+                    <p>One of the world's largest private residences, a magnificent blend of eastern and western architecture.</p>
+                    <button class="read-more-btn">Read More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. BLUE HOUSES GALLERY SECTION -->
+    <section class="jodhpur-gallery" id="gallery">
+        <h2 class="section-title">The Blue City Gallery</h2>
+        <p class="section-subtitle">Click on any image to view it in full screen</p>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="D:\web development\The Blue City of Jodhpur_ A Living Canvas of Bharat 🇮🇳.jpg" alt="Blue Street 1">
+            <p>Blue Street 1</p></div>
+            <div class="gallery-item"><img src="D:\web development\pexels-abhinav-tripathi-473877923-15774210.jpg" alt="Old City View">
+            <p>Old City View</p></div>
+            <div class="gallery-item"><img src="D:\web development\download.jpg" alt="Local Culture">
+            <p>Local Culture</p></div>
+            <div class="gallery-item"><img src="D:\web development\download.jpg" alt="Blue Walls">
+            <p>Blue Walls</p></div>
+            <div class="gallery-item"><img src="D:\web development\Mehrangarh Fort, Mehrangarh Fort Jodhpur, Mehrangarh Fort Jodhpur Rajasthan.jpg" alt="Mehrangarh View">
+            <p>Mehrangarh View</p></div>
+            <div class="gallery-item"><img src="D:\web development\Welcome To Amber Fort.jpg" alt="Traditional Doors">
+            <p>Traditional Doors</p></div>
+        </div>
+    </section>
+
+    <!-- 6. FAMOUS FOOD SECTION -->
+    <section class="jodhpur-food" id="food">
+        <h2 class="section-title">Famous Tastes of the Blue City</h2>
+        <div class="food-container">
+            <div class="food-item">
+                <i class="fas fa-utensils food-icon"></i>
+                <h3>Pyaaz Kachori & Mirchi Bada</h3>
+                <p>Spicy and delicious traditional Rajasthani snacks that you cannot miss when in Jodhpur.</p>
+            </div>
+            <div class="food-item">
+                <i class="fas fa-ice-cream food-icon"></i>
+                <h3>Makhaniya Lassi</h3>
+                <p>A thick, creamy saffron-flavored yogurt drink topped with a generous dollop of cream.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FORT TIMINGS TABLE -->
+    <section class="fort-info" id="timings">
+        <h2 class="section-title">Mehrangarh Fort Timings & Tickets</h2>
+        <div class="table-container">
+            <table class="info-table">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Timing / Details</th>
+                        <th>Price (INR)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Opening Hours</strong></td>
+                        <td>09:00 AM - 05:00 PM (Daily)</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Indian Visitors</strong></td>
+                        <td>Includes entry to the palace museum</td>
+                        <td>₹100</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Foreign Visitors</strong></td>
+                        <td>Includes audio guide instrument</td>
+                        <td>₹600</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Camera Fees</strong></td>
+                        <td>Still Camera / Video Camera</td>
+                        <td>₹100 / ₹200</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- 8. LIVE WEATHER CARD -->
+    <section class="weather-section" id="weather">
+        <h2 class="section-title">Jodhpur Live Weather</h2>
+        <div class="weather-card">
+            <div class="weather-icon" id="w-icon">☀️</div>
+            <div class="weather-temp" id="w-temp">32°C</div>
+            <div class="weather-desc" id="w-desc">Sunny</div>
+            <div class="weather-info">Humidity: <span id="w-humidity">25%</span> | Wind: <span id="w-wind">12 km/h</span></div>
+        </div>
+    </section>
+
+    <!-- 9. TOUR PLAN CUSTOMIZER - COMPLETED -->
+    <section class="booking-section" id="booking">
+        <h2 class="section-title">Plan & Budget Your Jodhpur Tour</h2>
+        <div class="booking-container">
+            <form id="booking-form">
+                <label>Number of People: <input type="number" id="people" value="2" min="1"></label>
+                <label>Number of Days: <input type="number" id="days" value="3" min="1"></label>
+                <label>
+                    <input type="checkbox" id="guide" value="1500"> Expert Guide - ₹1500/day
+                </label>
+                <label>
+                    <input type="checkbox" id="hotel" value="3000"> Heritage Hotel - ₹3000/night
+                </label>
+                <label>
+                    <input type="checkbox" id="cab" value="2000"> AC Cab - ₹2000/day
+                </label>
+                <button type="button" id="calculate-btn">Calculate Cost</button>
+            </form>
+            <div id="total-cost">Total Estimated Cost: ₹0</div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+        <p>&copy; 2026 Explore Jodhpur. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
