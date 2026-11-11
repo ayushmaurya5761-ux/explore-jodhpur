@@ -47,23 +47,30 @@ document.querySelectorAll('.gallery-item img').forEach(img => {
 
 // 6. Cost Calculator
 document.getElementById('calculate-btn').addEventListener('click', () => {
-    const people = parseInt(document.getElementById('people').value) || 1;
-    const days = parseInt(document.getElementById('days').value) || 1;
+  const peopleInput = parseInt(document.getElementById('people').value);
+  const daysInput = parseInt(document.getElementById('days').value);
 
-    let total = 0;
+  const people = isNaN(peopleInput) || peopleInput < 0 ? 0 : peopleInput;
+  const days = isNaN(daysInput) || daysInput < 0 ? 0 : daysInput;
 
+  const platformCharge = 500; // Platform service charge
+  let total = platformCharge;
+
+  if (people > 0 && days > 0) {
     if (document.getElementById('guide').checked) {
-        total += 1500 * days;
+      total += 1500 * days;
     }
     if (document.getElementById('hotel').checked) {
-        total += 3000 * days;
+      total += 3000 * days;
     }
     if (document.getElementById('cab').checked) {
-        total += 2000 * days;
+      total += 2000 * days;
     }
 
-    // Base cost per person per day
-    total += people * days * 500;
+    
+
+  document.getElementById('total-cost').textContent = `Total Estimated Cost: ₹${total.toLocaleString()} (Includes ₹500 Platform Service Charge)`;
+});
 
     document.getElementById('total-cost').textContent = `Total Estimated Cost: ₹${total.toLocaleString()}`;
 });
